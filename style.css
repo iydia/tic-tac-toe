@@ -25,6 +25,7 @@ h1 {
     color: #ac8cf1; /* Purple */
     font-size: 3em;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Shadow for bubble effect */
+    margin-bottom: 20px;
 }
 
 #comments {
@@ -74,4 +75,28 @@ button {
 button:hover {
     background-color: #2980b9; /* Darker blue on hover */
     transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+footer {
+    background-color: #2a2a2a;
+    color: #dcdcdc;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+    border-top: 2px solid #ac8cf1;
+}
+
+footer a {
+    color: #ac8cf1;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+#footer-content p {
+    margin: 5px 0;
+    font-size: 1em;
 }
