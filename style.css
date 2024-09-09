@@ -1,20 +1,77 @@
-.grid{
-    width: 75px;
-    height: 75px;
-    border: 2px solid;
-    box-shadow: 0 0 0 2px;
-    line-height: 75px;
-    font-size: 50px;
-    cursor: pointer;
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-#gridContainer{
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #2a2a2a; /* Dark background */
+    color: #dcdcdc; /* Light text color */
+    text-align: center;
+}
+
+#game {
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #0c010f; /* Slightly lighter dark background */
+    border-radius: 20px;
+    width: fit-content;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+}
+
+h1 {
+    color: #ac8cf1; /* Purple */
+    font-size: 3em;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Shadow for bubble effect */
+}
+
+#comments {
+    color: #ac8cf1; /* Blue */
+    font-size: 1.5em;
+    margin: 20px 0;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7); /* Shadow for bubble effect */
+}
+
+.grid {
+    width: 75px;
+    height: 75px;
+    border: 3px solid #8456e8; /* Purple */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Glow effect */
+    line-height: 75px;
+    font-size: 50px;
+    color: #fff; /* White text */
+    background: linear-gradient(145deg, #0a1117, #0c1721); /* Gradient background for grid */
+    cursor: pointer;
+    border-radius: 10px; /* Rounded corners */
+    transition: background 0.3s, transform 0.2s; /* Smooth effects */
+}
+
+.grid:hover {
+    background: #3b4a60; /* Slightly lighter background on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+#gridContainer {
     display: grid;
-    grid-template-columns: repeat(3, auto);
-    width: 225px;
+    grid-template-columns: repeat(3, 75px);
+    gap: 5px;
     margin: auto;
 }
 
-#game{
-    text-align: center;
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff; /* White text */
+    background-color: #2c1f47; /* Blue */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; /* Smooth effects */
+}
+
+button:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
 }
