@@ -73,7 +73,7 @@ button {
 }
 
 button:hover {
-    background-color: #2980b9; /* Darker blue on hover */
+    background-color: #6b5f73; /* Darker blue on hover */
     transform: scale(1.05); /* Slightly enlarge on hover */
 }
 
